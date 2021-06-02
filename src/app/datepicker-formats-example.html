@@ -1,0 +1,16 @@
+<mat-form-field appearance="fill">
+  <mat-label>select slot date</mat-label>
+  <input
+    matInput
+    [matDatepicker]="dp"
+    [min]="minDate"
+    [matDatepickerFilter]="myFilter"
+    [formControl]="date"
+  />
+  <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+  <mat-datepicker #dp></mat-datepicker>
+</mat-form-field>
+
+<!-- Copyright 2021 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
